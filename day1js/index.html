@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1JS</title>
+</head>
+<body>
+    <pre>
+         <h1>Day 1 JS Preparation</h1>
+        <b>1.Difference between “ == “ and “ === “ operators.</b>
+        <span>ans. "==" and "===" both comes under relational operator.
+            "==" :The == operator means "is equal to," matching by value only.
+            "===":The === operator means "is exactly equal to," matching by both value and data type.
+
+        </span>
+        <b>2.What is the spread operator?</b>
+        <span>ans.The JavaScript spread operator is denoted like this (...) and
+            used to expand or iterables which is introduced in 2015 Es6.
+            it allows us to quickly copy all or part of an existing array or object into another array or object.
+            used to expand or iterables which is introduced in 2015 Es6.
+        </span>
+
+        <b>3.What are the differences between var, let and const?</b>
+        <span>ans. 
+            <table border="2px", width="50%">
+               <tr>
+                <th>no</th>
+                <th>VAR</th>
+                <th>LET</th>
+                <th>CONST</th>
+               </tr>
+               <tr>
+                <th>1</th>
+                <th>we can declare the variable name in one line and initialize it on another line or in the same line itself.</th>
+                <th> we can declare the variable name in one line and initialize it on another line or in the same line itself. </th>
+                <th>we have to declare the variable and initialize in the same line itself.</th>
+               </tr>
+               <tr>
+                <th>2</th>
+                <th>Two variables with same name are possible with var</th>
+                <th> Two variables with same name aren't possible with let </th>
+                <th>Two variables with same name aren't possible with const. </th>
+               </tr>
+               <tr>
+                <th>3</th>
+                <th>We can reassign/update the values of the variable which have already been initialized.</th>
+                <th> We can reassign/update the values of the variable which have already been initialized. </th>
+                <th> We can't reassign/update the values of the variable which have already been initialized. </th>
+               </tr>
+               <tr>
+                <th>4</th>
+                <th>var is global scoped. </th>
+                <th>let is block scoped.</th>
+                <th>const is block scoped. </th>
+               </tr>
+               <tr>
+                <th>5</th>
+                <th>var supports Hoisting.</th>
+                <th>Let doesn't supports Hoisting.</th>
+                <th>const also doesn't supports Hoisting.</th>
+               </tr>
+            </table> </span>
+
+        <b>4.What is execution context</b>
+        <span>ans. The creation of <b>"Execution Context"</b>happens in two phases.they are:
+            1.Creation Phase.
+            2.Execution Phase.
+            <center>
+                <table border="2px", width="50%">
+                    <tr>
+                        <th>Creation Phase</th>
+                        <th>Execution Phase</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>Memory is allocated</td>
+                        <td> Execution of code starts</td>
+                    </tr>
+                    <tr>
+                        <td>It is also called "Variable Environment".</td>
+                        <td>It is also called "Thread of Execution".</td>
+                    </tr>
+                    
+                </table> 
+            </center>
+            * When memory is allocates what does it stores means a special value called <b>"undefined"</b>
+            * once code execution starts the "undefined" is updated with the value assigned to the Variable. 
+            * In case of functions it literally stores whole code of the function inside memory space.
+              once it starts to execute another execution context is created inside the global execution context.
+        </span>
+
+        <b>5.What is meant by first class functions</b>
+        <span>ans. it is also called as first class citizenFirst-Class Function: A programming language is said to have First-class functions.
+            if functions in that language are treated like other variables. 
+            So the functions can be assigned to any other variable or passed as an argument or can be returned by another function
+
+        </span>
+
+        <b>6.What are closures? Give an example of closure</b>
+        <span>ans.A closure is a function having access to the parent scope, even after the parent function has closed.
+            let f;
+           const g = function(){
+                     const length = 3;
+                    f = function( breadth){
+                    console.log(length * breadth);
+                 }
+             }
+            g();
+            f( 2 );
+            console.dir(f);
+            
+            combination of inner function and lexical environment of outer functions
+
+        </span>
+
+       
+
+    </pre>
+</body>
+</html>
