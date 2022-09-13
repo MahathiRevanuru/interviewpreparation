@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <h1>day 4 JS</h1>
+
+        <!-- tempearory
+        no life
+        area 
+        where the code is in accessiblr
+        it is apriod of time in which let,const cannoot be accessed
+        if u need to access u need to declare and then u need to access.
+        
+        pass by value: premitive, copy of that variable is craested every time.
+        pass byreference: non premitive copy of the varibal ei s not created  -->
+        <b>1.What is a Temporal Dead Zone?</b>
+        <span>ans.the area of a block where a variable is inaccessible until the moment the computer completely initializes it with a value</span>
+        
+        
+        <b>2.What is the for-in loop in JavaScript? Give its syntax</b>
+        <span>ans.The JavaScript for in statement loops through the properties of an Object:
+            for (key in object) {
+                // code block to be executed
+              }
+              Each iteration returns a key (x)
+              The key is used to access the value of the key
+        </span>
+
+        <b>3.Explain Local Scope, Block Scope, Functional Scope and Scope Chain in JavaScript?</b>
+        <span>ans. <b>Local or Function Scope:</b>
+            Variables that are declared inside a function or a method have Local or Function Scope.
+            It means those variables or functions which are declared inside the function or a method can be accessed within that function only.
+           <b>Block Scope:</b>
+            Block Scope is related to the variables or functions which are declared using let and const since var does not have block scope.
+            Block Scope tells us that variables that are declared inside a block { }, can be accessed within that block only, not outside of that block.
+            <b>Scope Chain:</b>
+            JavaScript engine uses scopes to find out the exact location or accessibility of variables and that particular process is known as Scope Chain.
+            Scope Chain means that one variable has a scope (it may be global or local/function or block scope) is used by another variable or function having another scope (may be global or local/function or block scope).
+            This complete chain formation goes on and stops when the user wishes to stop it according to the requirement.</span>
+        
+        
+        
+        
+        <b>4.What is difference between null and undefined and where to use what?</b>
+        <span>ans. In JavaScript, undefined is a type.
+            whereas null an object.
+            <i>undefined</i>:It means a variable declared, but no value has been assigned a value.
+            <i>null</i>:null in JavaScript is an assignment value. You can assign it to a variable.
+        </span>
+
+
+        <b>5.what is Symbol?</b>
+        <span>ans.Symbol is a primitive data type of JavaScript, along with string, number, boolean, null and undefined. 
+            It was introduced in ECMAScript 2015, so just a few years ago. It's a very peculiar data type. 
+            Once you create a symbol, its value is kept private and for internal use
+        </span>
+
+        <b>6.Write code to explain map and filter in arrays</b>
+        <span>ans. both are methods of arrays
+            map wont reduce the length of the original array.
+            while filter can alter the size of the original array.
+        </span>
+
+        <b>7.Explain passed by value and passed by reference</b>
+        <span>ans.The difference between pass-by-reference and pass-by-value is that modifications made to arguments passed in by reference in the called function
+             have effect in the calling function, whereas modifications made to arguments passed in by value in the called function can not affect the calling function</span>
+
+        <b>8.Please explain Self Invoking Function and its code</b>
+        <span>ans.A self-invoking (also called self-executing) function is a nameless (anonymous) function that is invoked immediately after its definition.
+             An anonymous function is enclosed inside a set of parentheses followed by another set of parentheses ()
+            (function (){
+
+            })()
+            
+            </span>
+
+        <b>9.What is an event loop and call stack</b>
+        <span>ans.The event loop is a constantly running process that monitors both the callback queue and the call stack. 
+            If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack
+        </span>    
+
+
+
+
+    </pre>
+    <script src="index.js"></script>
+</body>
+</html>
